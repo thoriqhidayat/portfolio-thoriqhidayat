@@ -1,0 +1,454 @@
+/* css reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* akhir css reset */
+
+/* === fonts === */
+@font-face {
+  font-family: Rubik-regular;
+  src: url(fonts/Rubik-Regular.ttf);
+}
+
+
+/* body */
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+	font-family: Rubik-regular;
+}
+
+body {
+  background-color: #f8f9fa!important;
+}  
+
+/* nav */
+nav {
+  font-family: sans-serif;
+  z-index: 9999;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.nav-link {
+  font-weight: 600;
+  color: #000000!important;
+}
+
+/* === INTRO === */
+#intro {
+	text-align: center;
+}
+
+.intro-me h2 {
+	font-size: 36px;
+	font-family: sans-serif;
+	font-weight: 600;
+	margin-top: 120px;
+}
+
+.intro-me p {
+	font-size: 12px;
+	font-family: sans-serif;
+	font-weight: 300;
+	color: grey;
+	margin-top: 10px;
+}
+
+.intro img {
+	position: relative;
+	height: 400px;
+	width: 300px;
+	z-index: 9999;
+	box-shadow: 2px 5px 25px rgba(0,0,0,0.2);
+	margin-top: 50px;
+	z-index: 999999;
+}
+
+#intro hr {
+	margin-top: 100px;
+	width: 70%;
+}
+
+.top-right-image img {
+	top: -13px;
+	right: 80px;
+	position: absolute;
+	height: 30px;
+	width: 30px;
+}
+
+.bottom-left-image img {
+	bottom: -10px;
+	left: 80px;
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	z-index: -999999;
+}
+
+#intro .top-right-gradient {
+	position: absolute;
+	top: -40%;
+	right: -14%;
+	width: 800px;
+	height: 800px;
+	border-radius: 50%;
+	background: linear-gradient(#ee9ca7, #ec4357);
+}
+
+#intro .bottom-left-gradient {
+	position: absolute;
+	bottom: 15%;
+	left: -100px;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: linear-gradient(#c779d0, #4bc0c8);
+	z-index: -9999999;
+}
+
+
+/* ==== ABOUT ==== */
+#about h1 {
+	font-family: sans-serif;
+	font-weight: 600;
+	font-size: 32px;
+	margin-top: 80px;
+}
+
+.about-me {
+	padding: 20px;;
+	background-color: #ffffff;
+	text-align: center;
+	margin: 15px;
+	padding-bottom: 30px;
+	box-shadow: 9px 9px 25px rgba(0,0,0,0.4);
+}
+
+.about-me img {
+	width: 50px;
+	height: 50px;
+}
+
+.about-me h2 {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.about-me p {
+	color: grey;
+}
+
+#about .bottom-right-gradient {
+	position: absolute;
+	bottom: -25%;
+	right: -100px;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: linear-gradient(#ee9ca7, #ec4357);
+	z-index: -9999999;
+}
+
+/* === Aboutme === */
+#aboutme {
+	margin-top: 80px;
+}
+#aboutme h1 {
+	font-family: sans-serif;
+	font-size: 32px;
+	font-weight: 600;
+}
+
+#aboutme p {
+	font-size: 18px;
+	color: grey;
+	margin-top: 30px;
+	text-align: justify;
+}
+
+#aboutme button {
+	border-radius: 20px;
+	font-size: 12px;
+	margin-top: -15px;
+}
+
+#aboutme img {
+	height: 25px;
+	width: 25px;
+	margin-left: 10px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+/* === PORTFOLIO === */
+
+#portfolio h1 {
+	font-size: 26px;
+	font-weight: 600;
+	font-family: sans-serif;
+}
+
+.my-work {
+	text-align: center;
+	margin-top: 100px;
+}
+
+#portfolio img {
+	height: 600px;
+	width: 100%;
+	box-shadow: 2px 5px 25px rgba(0,0,0,0.3);
+	margin-top: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#portfolio button {
+	border-radius: 20px;
+	margin-top: 20px;
+}
+
+/* === Why Hire Me */
+#hire-me {
+	margin-top: 100px;
+}
+
+.me-hire h1 {
+	font-size: 28px;
+	font-weight: 600;
+	font-family: sans-serif;
+	margin-bottom: 20px;
+}
+
+.me-hire p {
+	text-align: justify;
+	font-size: 14px;
+	color: grey;
+	margin-bottom: 10px;
+	line-height: 20px;
+}
+
+.me-hire button {
+	border-radius: 20px;
+}
+
+#hire-me .hire {
+	background-color: #ffffff;
+	padding: 80px 80px 20px 80px;
+	box-shadow: 2px 5px 25px rgba(0,0,0,0.3);
+	margin-top: 20px;
+}
+
+#hire-me .hire h2 {
+	font-size: 24px;
+	font-weight: 600;
+	font-family: sans-serif;
+}
+
+/* === CLIENT === */
+#client {
+	background-color: lightgrey;
+	margin-top: 50px;
+	text-align: center;
+}
+
+#client img {
+	height: 100px;
+	width: 100px;
+}
+
+
+/* === CONTACT === */
+#contact {
+	margin-top: 100px;
+	
+}
+
+.contactme {
+	position: relative;
+	background-color: #ffffff;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+	padding: 30px;
+	text-align: center;
+}
+
+.contactme p {
+	margin-top: 20px;
+	font-size: 14px;
+	font-family: sans-serif;
+	color: grey;
+}
+
+.contactme h2 {
+	font-size: 28px;
+	font-weight: 600;
+	font-family: sans-serif;
+	margin-top: 10px;
+}
+
+.contactme img {
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	left: -13px;
+	top: -13px;
+	z-index: -999999;
+}
+
+.footbar {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.footbar h1 {
+	font-size: 32px;
+	font-weight: 600;
+	font-family: sans-serif;
+	margin-bottom: 15px;
+}
+
+.footbar a {
+	color: black;
+	font-weight: 600;
+	font-size: 14px;
+	font-family: sans-serif;
+	margin: 0 15px;
+}
+
+.footimage {
+	text-align: center;
+}
+
+.footimage img {
+	height: 30px;
+	width: 30px;
+	margin: 0 10px;
+}
+
+/* === FOOTER === */
+#footer {
+	background-color: lightgray;
+	margin-top: 40px;
+	height: 40px;
+	text-align: center;
+}
+
+#footer p {
+	color: grey;
+	padding-top: 15px;
+	font-size: 11px;
+}
+
+
+
+
+
+/* ===== DEKSTOP VERSION ===== */
+@media (min-width: 992px) { 
+	#intro {
+		text-align: left;
+	}
+
+	.intro img {
+		margin-top: 0;
+	}
+
+	#aboutme p {
+		margin-top: 0;
+	}
+
+	.my-work {
+		text-align: right;
+	}
+	
+	.portfolio-imageone {
+		margin-top: -70px;
+	}
+
+	#portfolio button {
+		margin-right: 100px;
+		margin-left: -60px;
+		margin-top: -100px;
+	}
+
+	#hire-me .hire {
+		margin-top: 0;
+	}
+
+	.top-right-image img {
+		top: -10px;
+		right: 55px;
+		position: absolute;
+		height: 30px;
+		width: 30px;
+	}
+
+	.bottom-left-image img {
+		bottom: -10px;
+		left: 3px;
+		position: absolute;
+		height: 30px;
+		width: 30px;
+		z-index: -999999;
+	}
+
+	.contactme img {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		left: -13px;
+		top: -13px;
+		z-index: -999999;
+	}
+}
